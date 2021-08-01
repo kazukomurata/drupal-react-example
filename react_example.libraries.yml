@@ -1,0 +1,7 @@
+recipe_list:
+  version: VERSION
+  js:
+    js/app.js: { }
+  dependencies:
+    - core/drupal
+    - core/drupalSettings

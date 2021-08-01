@@ -1,0 +1,4 @@
+name: 'React rendering example'
+description: ''
+core_version_requirement: ^8 || ^9
+type: module
