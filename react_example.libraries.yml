@@ -2,6 +2,7 @@ recipe_list:
   version: VERSION
   js:
     js/app.js: { }
+    js/translation.js: { }
   dependencies:
     - core/drupal
     - core/drupalSettings

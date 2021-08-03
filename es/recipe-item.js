@@ -7,6 +7,7 @@ export default class RecipeItem extends React.Component {
   }
 
   render() {
+    const Drupal = this.props.drupal;
     const recipe = this.props.recipe;
     const linkname = Drupal.t("View Recipe");
     return (

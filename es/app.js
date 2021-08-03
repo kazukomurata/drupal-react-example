@@ -9,7 +9,8 @@ import RecipeBlock from './recipe-block';
       if (context === document) {
         const list = context.getElementById('recipe-list');
         const recipes = JSON.parse(settings.react_example.recipes)
-        ReactDOM.render(<RecipeBlock recipes={recipes}/>, list);
+        const filters = JSON.parse(settings.react_example.filters)
+        ReactDOM.render(<RecipeBlock recipes={recipes} drupal={Drupal} filters={filters}/>, list);
         //ReactDOM.render(recipes , list);
       }
     }
