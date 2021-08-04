@@ -35,7 +35,6 @@ export default class RecipeBlock extends React.Component {
   render() {
     return (
       <>
-        <h2>Hello</h2>
         <RecipeFilter drupal={this.props.drupal} filters={this.props.filters} handleFilterChange={this.handleFilterChange}/>
         <div className={"grid--4"}>
           <RecipeList recipes={this.props.recipes} drupal={this.props.drupal} conditions={this.state.conditions}/>

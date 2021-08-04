@@ -11,8 +11,8 @@ export default class RecipeFilter extends React.Component {
   handleChange(e) {
     this.props.handleFilterChange(
       {
-        name : 'field_difficulty',
-        value : e.target.value
+        name: 'field_difficulty',
+        value: e.target.value
       });
   }
 
@@ -22,21 +22,27 @@ export default class RecipeFilter extends React.Component {
 
     const options = difficulty.map((item) => {
       return (
-        <label key={item.id} htmlFor={item.id}>
-          {item.value}
-        <input
-          type="checkbox"
-          id={item.id}
-          value={item.id}
-          onChange={this.handleChange}
-        />
-        </label>
+        <div key={item.id} className={"form-type-checkboxes container-inline form-type-checkbox"}>
+          <input
+            type="checkbox"
+            id={item.id}
+            value={item.id}
+            onChange={this.handleChange}
+          />
+          <label htmlFor={item.id}>
+            {item.value}
+
+          </label>
+
+        </div>
       );
 
     })
     return (
-      <div>
-        {options}
+      <div className={"filter"}>
+        <div className={"form-type-checkboxes container-inline"}>
+          {options}
+        </div>
       </div>
     );
   }

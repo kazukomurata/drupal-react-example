@@ -1,0 +1,9 @@
+.form-type-checkbox {
+  padding-right: 1.5em;
+}
+.form-type-checkbox label {
+  padding-left: 0.5em;
+}
+.filter {
+  padding: 1.0em 0;
+}

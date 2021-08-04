@@ -3,6 +3,9 @@ recipe_list:
   js:
     js/app.js: { }
     js/translation.js: { }
+  css:
+    component:
+      css/style.css: {}
   dependencies:
     - core/drupal
     - core/drupalSettings
