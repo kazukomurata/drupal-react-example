@@ -35,7 +35,7 @@ export default class RecipeList extends React.Component {
     )
     return (
       <div className={"view-content"}>
-        {rows}
+          {rows}
       </div>
     );
   }

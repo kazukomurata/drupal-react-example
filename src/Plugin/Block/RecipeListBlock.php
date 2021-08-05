@@ -75,7 +75,7 @@ class RecipeListBlock extends BlockBase implements
     );
   }
 
-  // TODO キャッシュ node-list 使うとか考えろ
+  // TODO キャッシュ node-list 使った方がいい
   public function build() {
     $build = [];
     $recipes = $this->getRecipes();
@@ -109,7 +109,7 @@ class RecipeListBlock extends BlockBase implements
     return $build;
   }
 
-  // TODO DIしろ.サービス分けるとかしろ.
+  // TODO languageManagerをDI
   protected function getRecipes() {
     $langcode = \Drupal::languageManager()->getCurrentLanguage()->getId();
     /** @var  $storage \Drupal\Core\Entity\EntityStorageInterface */

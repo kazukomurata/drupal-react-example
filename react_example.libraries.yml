@@ -1,7 +1,7 @@
 recipe_list:
   version: VERSION
   js:
-    js/app.js: { }
+    js/app.js: { preprocess: false }
     js/translation.js: { }
   css:
     component:
